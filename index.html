@@ -10,22 +10,26 @@
   </div>
   <body>
     <div id="app">
-      <h1> Client State </h1>  
+      <h1> Client State </h1>
       <div id="player-number"></div>
-      <div id="client-state">Client Status</div>
-      <h1> Game Server State </h1>
-      <div id="game-state">Game Status</div>
+      <div id="client-state">waiting on server...</div>
+      <h1></h1>  
+      <div id="player-one"> Player 1: 0 </div>
+      <div id="player-two"> Player 2: 0 </div>
+      <div id="player-three"> Player 3: 0 </div>
+      <div id="player-four"> Player 4: 0 </div>
       <h2>Player Interface</h2>
         <div>
           <button onclick="buttonClicked(1);"> Player 1 </button>
           <button onclick="buttonClicked(2);"> Player 2 </button>
           <button onclick="buttonClicked(3);"> Player 3 </button>
+          <button onclick="buttonClicked(4);"> Player 4 </button>
         </div>
         <div>
-          <h2>Player's Connected: </h2>
+          <h2>Server Information: </h2>
           <div id="players-connected"> waiting on server...</div>
-          <h2>Room Number: </h2>
           <div id="room-number"> waiting on server...</div>
+          <div id="players-in-room"> waiting on server... </div>
         </div>
     </div>
     <script type="module" src="/src/main.ts"></script>
